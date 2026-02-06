@@ -1,10 +1,2 @@
-from collections import Counter
-
 def solution(nums):
-    
-    pick = len(nums) // 2 
-    num = len(set(nums))
-    
-    return min(pick, num)
-
-              
+    return min(len(nums) // 2, len(set(nums)))
