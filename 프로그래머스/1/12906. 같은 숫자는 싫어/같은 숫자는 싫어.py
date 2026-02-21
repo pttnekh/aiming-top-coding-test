@@ -1,7 +1,7 @@
 def solution(arr):
-    queue = []
+    q = []
     for i in arr:
-        if not queue or queue[-1] != i:
-            queue.append(i)
+        if not q or q[-1] != i:
+            q.append(i)
             
-    return queue
+    return q
